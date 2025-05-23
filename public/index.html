@@ -1,47 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
+
+<head>
+
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Web site created using create-react-app" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-     <div class="root">
+    <div class="root">
         <div class="section_home">
             <div class="home_nav">
                 <div class="home_nav_logo">
                     <img src="./all_img/img/logo-white.png" alt="">
                 </div>
                 <div class="home_nav_nav">
-                    <a href="#delivery">FOOD DELIVWRY</a>
-                    <a href="#hiw">HOW IT WORKS</a>
-                    <a href="#city">OUR CITIES</a>
-                    <a href="#sign">SIGN-UP</a>
+                    <a class="not_hamburger" href="#delivery">FOOD DELIVWRY</a>
+                    <a class="not_hamburger" href="#hiw">HOW IT WORKS</a>
+                    <a class="not_hamburger" href="#city">OUR CITIES</a>
+                    <span id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></span>
+                    <a class="not_hamburger" href="#sign">SIGN-UP</a>
                 </div>
             </div>
             <div class="home_text">
@@ -78,10 +70,10 @@
                         </P>
                     </div>
                     <div class="delivery_text2_main_text">
-                        <span>
+                        <p>
                             Never cook again! We really mean that. Our subscription plans include up to 365 days/year
                             coverage. You can also choose to order more flexibly if that's your style.
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="delivery_text2_main">
@@ -95,15 +87,14 @@
                         </p>
                     </div>
                     <div class="delivery_text2_main_text">
-                        <span>
+                        <p>
                             You're only twenty minutes away from your delicious and super healthy meals delivered right
                             to your home.
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="delivery_text2_main">
                     <div class="delivery_text2_main_img">
-                        <!-- <img src="" alt=""> -->
                         <i class="fa-solid fa-burger"></i>
                     </div>
                     <div class="delivery_text2_main_feature">
@@ -112,10 +103,10 @@
                         </p>
                     </div>
                     <div class="delivery_text2_main_text">
-                        <span>
+                        <p>
                             All our vegetables are fresh, organic and local. Animals are raised without added hormones
                             or antibiotics. Good for your health, the environment, and it also tastes better!
-                        </span>
+                        </p>
                     </div>
                 </div>
                 <div class="delivery_text2_main">
@@ -129,10 +120,10 @@
                         </p>
                     </div>
                     <div class="delivery_text2_main_text">
-                        <span>
+                        <p>
                             We don't limit your creativity, which means you can order whatever you feel like. You can
                             also choose from our menu containing over 100 delicious meals. It's up to you!
-                        </span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -525,10 +516,10 @@
                             <td>
                                 <input class="inpt" type="text" name="" id="">
                             </td>
-                            
+
                         </tr>
-                        
-                        
+
+
                     </tbody>
                 </table>
 
@@ -539,17 +530,17 @@
         </div>
         <div class="section_footer">
             <div class="footer_text">
-                    <div>About Us</div>
-                    <div>Blog</div>
-                    <div>Press</div>
-                    <div>IOS App</div>
-                    <div>Android App</div>
+                <div>About Us</div>
+                <div>Blog</div>
+                <div>Press</div>
+                <div>IOS App</div>
+                <div>Android App</div>
             </div>
             <div class="footer_img">
-                <i style="font-size: 30px;" class="fa-brands fa-facebook fb"></i>
-                <i style="font-size: 30px;" class="fa-brands fa-twitter twt"></i>
-                <i style="font-size: 30px;" class="fa-brands fa-google gg"></i>
-                <i style="font-size: 30px;" class="fa-brands fa-instagram inst"></i>
+                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-facebook fb"></i>
+                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-twitter twt"></i>
+                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-google gg"></i>
+                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-instagram inst"></i>
             </div>
         </div>
     </div>
@@ -560,17 +551,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+        let ak = document.getElementById("hamburger")
+        ak.addEventListener("click", function () {
+            alert("Button clicked!");
+        });
     </script>
+</body>
 
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>

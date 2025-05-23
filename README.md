@@ -6,7 +6,7 @@ A simple and intuitive web application that allows users to efficiently manage t
 
 Experience the app in action:
 
-👉 [https://secrets-2-8m5pcqc9q-anupbutes-projects.vercel.app/](https://secrets-2-8m5pcqc9q-anupbutes-projects.vercel.app/)
+👉 [https://foor-pr-2-git-main-anupbutes-projects.vercel.app/](https://foor-pr-2-git-main-anupbutes-projects.vercel.app/)
 
 ## 📋 Features
 
