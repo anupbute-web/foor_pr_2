@@ -28,12 +28,19 @@
                 <div class="home_nav_logo">
                     <img src="./all_img/img/logo-white.png" alt="">
                 </div>
+                <div class="open_nav">
+                    <a href="#delivery" class="open_nav_link">FOOD DELIVWRY</a>
+                    <a href="#hiw" class="open_nav_link">HOW IT WORKS</a>
+                    <a href="#city" class="open_nav_link">OUR CITIES</a>
+                    <a href="#sign" class="open_nav_link">SIGN-UP</a>
+
+                </div>
                 <div class="home_nav_nav">
                     <a class="not_hamburger" href="#delivery">FOOD DELIVWRY</a>
                     <a class="not_hamburger" href="#hiw">HOW IT WORKS</a>
                     <a class="not_hamburger" href="#city">OUR CITIES</a>
-                    <span id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></span>
                     <a class="not_hamburger" href="#sign">SIGN-UP</a>
+                    <span style="overflow: hidden;" id="hamburger"><i style="overflow: hidden;" class="fa-solid fa-bars"></i></span>
                 </div>
             </div>
             <div class="home_text">
@@ -221,7 +228,7 @@
                     <div class="img_main_text">
                         <p>
                             <i class="fa-regular fa-circle-user"></i>
-                            1800+ Happy Eaters
+                            1700+ Happy Eaters
                         </p>
                         <p>
                             <i class="fa-regular fa-star"></i>
@@ -286,7 +293,7 @@
         <div class="section_review">
             <div class="review_text">
                 <h1>
-                    Our customer cat't live without us
+                    Our customer really cat't live without us
                 </h1>
                 <hr>
             </div>
@@ -367,7 +374,7 @@
                             399$<sub>/month</sub>
                         </h1>
                         <p>
-                            That's only 13.905$ per meal
+                            That's only 13.90$ per meal
                         </p>
                     </div>
                     <div class="price_card_main_mid">
@@ -442,7 +449,7 @@
                             STARTER
                         </h3>
                         <h1>
-                            19$<sub>/meal</sub>
+                            19$<sub>/meal </sub>
                         </h1>
                         <p>
                             That's only 13.905$ per meal
@@ -551,9 +558,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        let ak = document.getElementById("hamburger")
-        ak.addEventListener("click", function () {
-            alert("Button clicked!");
+        document.getElementById("hamburger").addEventListener("click", function () {
+            document.querySelector(".home_nav_nav").style.display = "none";
+            document.querySelector(".open_nav").style.display = "block";
         });
     </script>
 </body>
