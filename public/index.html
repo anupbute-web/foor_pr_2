@@ -29,11 +29,13 @@
                     <img src="./all_img/img/logo-white.png" alt="">
                 </div>
                 <div class="open_nav">
-                    <a href="#delivery" class="open_nav_link">FOOD DELIVWRY</a>
-                    <a href="#hiw" class="open_nav_link">HOW IT WORKS</a>
-                    <a href="#city" class="open_nav_link">OUR CITIES</a>
-                    <a href="#sign" class="open_nav_link">SIGN-UP</a>
-
+                    <div class="open_nav2">
+                        <a href="#delivery" class="open_nav_link">FOOD DELIVWRY </a>
+                        <a href="#hiw" class="open_nav_link">HOW IT WORKS</a>
+                        <a href="#city" class="open_nav_link">OUR CITIES</a>
+                        <a href="#sign" class="open_nav_link">SIGN-UP</a>
+                    </div>
+                    <span style="overflow: hidden;" id="hamburger2"><i style="overflow: hidden;" class="fa-solid fa-bars"></i></span>
                 </div>
                 <div class="home_nav_nav">
                     <a class="not_hamburger" href="#delivery">FOOD DELIVWRY</a>
@@ -544,10 +546,10 @@
                 <div>Android App</div>
             </div>
             <div class="footer_img">
-                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-facebook fb"></i>
-                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-twitter twt"></i>
-                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-google gg"></i>
-                <i style="font-size: 30px; overflow: hidden;" class="fa-brands fa-instagram inst"></i>
+                <i class="fa-brands fa-facebook fb"></i>
+                <i class="fa-brands fa-twitter twt"></i>
+                <i class="fa-brands fa-google gg"></i>
+                <i class="fa-brands fa-instagram inst"></i>
             </div>
         </div>
     </div>
@@ -555,13 +557,22 @@
         integrity="sha512-heZj7rPbZHWyOEhE34vsJkzj2DKK2mZ9D3jjMkXQJ0uMGu/m5iOty+le26NL1eFZ5+qa4XBYcflwYwITwCWufw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
     <script>
         AOS.init();
         document.getElementById("hamburger").addEventListener("click", function () {
             document.querySelector(".home_nav_nav").style.display = "none";
-            document.querySelector(".open_nav").style.display = "block";
+            let ak=document.querySelector(".open_nav");
+            ak.style.display = "flex";
+            ak.style.width="50%"; 
+            ak.style.justifyContent="space-between"
+
         });
+        document.getElementById("hamburger2").addEventListener("click", function () {
+            let ak=document.querySelector(".open_nav");
+            ak.style.display = "block";
+
+        })
     </script>
 </body>
 
