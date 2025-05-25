@@ -564,13 +564,15 @@
             document.querySelector(".home_nav_nav").style.display = "none";
             let ak=document.querySelector(".open_nav");
             ak.style.display = "flex";
-            ak.style.width="50%"; 
             ak.style.justifyContent="space-between"
 
         });
         document.getElementById("hamburger2").addEventListener("click", function () {
-            let ak=document.querySelector(".open_nav");
-            ak.style.display = "block";
+            let bk=document.querySelector(".open_nav");
+            bk.style.display = "none";
+            document.querySelector(".home_nav_nav").style.display = "block";
+
+
 
         })
     </script>

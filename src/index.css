@@ -31,6 +31,11 @@ hr {
   content: " ";
   width: 100px;
   margin: 20px auto;
+  border: none;
+}
+
+i{
+  overflow: hidden;
 }
 
 h1 {
@@ -98,10 +103,10 @@ h1 {
 .open_nav {
   display: none;
 }
-
+ 
 .open_nav a {
   text-decoration: none;
-  border: 1 px solid red;
+  /* border: 1px solid red; */
   color: white;
   font-size: 70%;
   font-weight: 300;
@@ -475,6 +480,7 @@ h1 {
 }
 
 .review_customer_main {
+
   margin: 10px;
   min-width: 300px;
   width: 30%;
@@ -483,6 +489,7 @@ h1 {
 }
 
 .review_customer_text_text {
+  padding: 0px 10px;
   font-size: 90%;
   font-weight: 400;
   font-style: italic;
@@ -506,6 +513,7 @@ h1 {
   height: 50px;
   width: 50px;
   margin-right: 20px;
+  margin-left: 10px;
   border-radius: 50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -777,6 +785,7 @@ code {
     padding: 20px 10px;
     border: 2px solid white;
     border-radius: 10px;
+    width: 30%;
   }
 
   .footer_text {
@@ -792,6 +801,8 @@ code {
     padding: 20px 10px;
     border: 2px solid white;
     border-radius: 10px;
+    width: 40%;
+
   }
   .section_home {
     padding: 00% 00% 20% 00%;
