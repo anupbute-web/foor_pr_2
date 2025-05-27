@@ -34,7 +34,7 @@ hr {
   border: none;
 }
 
-i{
+i {
   overflow: hidden;
 }
 
@@ -103,7 +103,7 @@ h1 {
 .open_nav {
   display: none;
 }
- 
+
 .open_nav a {
   text-decoration: none;
   /* border: 1px solid red; */
@@ -144,6 +144,12 @@ h1 {
   font-weight: 300;
 }
 
+.home_nav_nav a:hover{
+  text-decoration: underline;
+  color: #e67e22;
+
+}
+
 .home_text {
   padding: 00px 50px;
   font-weight: 300;
@@ -163,6 +169,7 @@ h1 {
   background-color: #f4f4f4;
   font-weight: 300;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .delivery_text1 h3 {
@@ -208,78 +215,50 @@ h1 {
   font-weight: 300;
 }
 
-.section_food_images {
-  background-color: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  font-weight: 300;
-}
-
-.food_img {
-  padding: 0;
-  margin: 0;
+.meals-showcase {
   display: flex;
   flex-direction: row;
-  width: 95%;
-  justify-content: center;
   flex-wrap: wrap;
+  list-style: none;
   overflow: hidden;
-  font-weight: 300;
+  width: 100%;
 }
-
-.food_images {
+.meals-showcase li {
+  min-width: 250px;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+.meal-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.25);
+  opacity: 0.8;
   transition: transform 0.5s, opacity 1s;
-  width: 290px;
-  height: 270px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 2px;
-  overflow: hidden;
-  font-weight: 300;
 }
-
-.food_images:hover {
+.meal-photo img:hover {
   transform: scale(1.03);
   opacity: 1;
 }
-
-.img1 {
-  background-image: url("../public/all_img/img/1.jpg");
+.clearfix {
+  zoom: 1;
 }
-
-.img2 {
-  background-image: url("../public/all_img/img/2.jpg");
-}
-
-.img3 {
-  background-image: url("../public/all_img/img/3.jpg");
-}
-
-.img4 {
-  background-image: url("../public/all_img/img/4.jpg");
-}
-
-.img5 {
-  background-image: url("../public/all_img/img/5.jpg");
-}
-
-.img6 {
-  background-image: url("../public/all_img/img/6.jpg");
-}
-
-.img7 {
-  background-image: url("../public/all_img/img/7.jpg");
-}
-
-.img8 {
-  background-image: url("../public/all_img/img/8.jpg");
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 .section_how_it_works {
   background-color: #f4f4f4;
+  padding-top: 50px;
   padding-bottom: 50px;
   font-weight: 300;
 }
@@ -456,8 +435,8 @@ h1 {
 }
 
 .section_review {
-  padding: 50px 00px;
-  padding: 150px 50px;
+  /* padding: 50px 00px; */
+  padding: 100px 50px;
   color: white;
   background-image: url("../public/all_img/img/back-customers.jpg");
   background-repeat: no-repeat;
@@ -480,7 +459,6 @@ h1 {
 }
 
 .review_customer_main {
-
   margin: 10px;
   min-width: 300px;
   width: 30%;
@@ -745,6 +723,11 @@ code {
   .a_half {
     font-size: 70%;
   }
+  .meals-showcase li {
+    min-width: 300px;
+    float: left;
+    width: 50%;
+  }
   .section_footer {
     display: flex;
     flex-direction: column;
@@ -802,7 +785,6 @@ code {
     border: 2px solid white;
     border-radius: 10px;
     width: 40%;
-
   }
   .section_home {
     padding: 00% 00% 20% 00%;
@@ -828,6 +810,12 @@ code {
   .a_half {
     font-size: 70%;
     padding: 5px 10px;
+  }
+
+  .meals-showcase li {
+    min-width: 300px;
+    float: left;
+    width: 100%;
   }
 
   .delivery_text1 h3 {
